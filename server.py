@@ -18,7 +18,7 @@ def html_page(page_name):
 
 # populates .csv database with information from contacts
 def contacts_to_csv(data):
-    with open('./portfolio_project/database.csv', 'a', newline ='') as database:
+    with open('database.csv', 'a', newline ='') as database:
         email = data['email']
         subject = data['subject']
         message = data['message']
